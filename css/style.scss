@@ -1,6 +1,6 @@
 $primary-font-color: #f4f4f4;
 
-$left-right-margin: 4rem;
+$left-right-margin: 3%;
 
 @mixin flex($justify, $align, $direction) {
     display: flex;
@@ -14,3 +14,5 @@ $left-right-margin: 4rem;
 @import "about";
 @import "portfolio";
 @import "contact";
+@import "tablet";
+@import "phone";

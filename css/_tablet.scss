@@ -1,0 +1,25 @@
+@media only screen and (min-width: 987px) {
+    menu-lg {
+        li {
+            display: inline;
+        }
+    }
+
+    .menu-burger {
+        .menu-burger-svg {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 987px) {
+    li {
+        display: none;
+    }
+
+    .menu-burger {
+        .menu-burger-svg {
+            display: inline;
+        }
+    }
+}
