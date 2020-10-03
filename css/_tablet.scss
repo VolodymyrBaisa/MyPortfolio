@@ -1,5 +1,5 @@
 @media only screen and (min-width: 987px) {
-    menu-lg {
+    .menu {
         li {
             display: inline;
         }
@@ -13,13 +13,21 @@
 }
 
 @media only screen and (max-width: 987px) {
-    li {
-        display: none;
+    .menu {
+        li {
+            display: none;
+        }
     }
 
     .menu-burger {
         .menu-burger-svg {
             display: inline;
+        }
+    }
+
+    .nav-header-burger {
+        li {
+            font-size: 1.3rem;
         }
     }
 }

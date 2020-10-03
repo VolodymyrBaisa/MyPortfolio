@@ -195,8 +195,90 @@ li {
   cursor: pointer;
 }
 
+.nav-header-burger {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-header-burger .nav-menu-svg {
+  width: 0;
+  fill: #4a5665;
+}
+
+.nav-header-burger ul {
+  position: absolute;
+  top: 0;
+  right: 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.nav-header-burger ul li {
+  display: none;
+  list-style-type: none;
+  margin-bottom: 2vw;
+}
+
+.nav-header-burger ul li a {
+  position: relative;
+  color: #f4f4f4;
+  margin-top: 1%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-header-burger ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  margin-bottom: -5%;
+  bottom: 0;
+  left: 0;
+  background-color: #f4f4f4;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-header-burger ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.nav-header-burger ul .active {
+  display: inline;
+}
+
 @media only screen and (min-width: 987px) {
-  menu-lg li {
+  .menu li {
     display: inline;
   }
   .menu-burger .menu-burger-svg {
@@ -205,11 +287,20 @@ li {
 }
 
 @media only screen and (max-width: 987px) {
-  li {
+  .menu li {
     display: none;
   }
   .menu-burger .menu-burger-svg {
     display: inline;
+  }
+  .nav-header-burger li {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-header-burger li {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
