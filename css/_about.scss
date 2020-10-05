@@ -1,0 +1,76 @@
+.about-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+            180deg,
+            rgba(244, 244, 244, 0.75) 0%,
+            rgba(244, 244, 244, 0) 100%
+        ),
+        url("/img/background-about.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.header-container {
+    position: relative;
+    height: 25vw;
+
+    .header-svg {
+        height: 100%;
+        width: 100%;
+    }
+    .container {
+        @include flex(center, center, column);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 $left-right-margin;
+        margin-bottom: 5%;
+        .about-title {
+            color: $primary-font-color;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1%;
+        }
+        .about-comment {
+            color: $primary-font-color;
+            margin: 0 18%;
+            text-align: center;
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+}
+
+.skills-container {
+    position: relative;
+    margin: 0 $left-right-margin;
+    @include flex(flex-start, center, row);
+    flex-wrap: wrap;
+    .skills {
+        flex: 1 1 200px;
+        background: $secondary-color;
+        border-radius: 1rem;
+        padding: 1rem;
+
+        .title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: $primary-font-color;
+        }
+
+        .description {
+            color: $primary-font-color;
+            line-height: 2.6rem;
+            margin-top: 1.5rem;
+        }
+    }
+    .skills-graph {
+        flex: 1 1 200px;
+        padding: 0 12vw;
+    }
+}
