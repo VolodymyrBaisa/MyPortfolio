@@ -13,6 +13,9 @@
 }
 
 @media only screen and (max-width: 987px) {
+    html {
+        font-size: 0.9vw;
+    }
     .menu {
         li {
             display: none;
@@ -22,6 +25,35 @@
     .menu-burger {
         .menu-burger-svg {
             display: inline;
+        }
+    }
+
+    .portfolio-header-container {
+        height: 20vw;
+    }
+
+    .skills-container {
+        margin: 5% 15%;
+        .skills {
+            margin: 0;
+        }
+
+        .skills-graph {
+            margin-top: 10%;
+            width: 50vw;
+            padding: 0 1vw;
+        }
+    }
+
+    .portfolio-container {
+        @include flex(space-between, flex-start, row);
+        .item-container-1,
+        .item-container-2,
+        .item-container-3,
+        .item-container-4,
+        .item-container-5 {
+            width: calc(22vw * 2);
+            height: calc(13vw * 2);
         }
     }
 }

@@ -1,9 +1,18 @@
 @media only screen and (max-width: 600px) {
     .skills-container {
-        margin: 0 20%;
-        margin-top: 5%;
+        margin: 5% 10%;
     }
-    .skills-graph {
-        margin-top: 10%;
+
+    .portfolio-container {
+        @include flex(space-between, center, column);
+        .item-container-1,
+        .item-container-2,
+        .item-container-3,
+        .item-container-4,
+        .item-container-5 {
+            margin: 3% 0;
+            width: calc(22vw * 3);
+            height: calc(13vw * 3);
+        }
     }
 }

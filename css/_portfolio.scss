@@ -1,0 +1,141 @@
+#portfolio {
+    background: url(/img/background-2.png) center center no-repeat;
+    background-size: cover;
+}
+
+.portfolio-header-container {
+    position: relative;
+    height: 15vw;
+    .header-svg {
+        height: 100%;
+        width: 100%;
+    }
+    .container {
+        @include flex(center, center, column);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 $left-right-margin 5% $left-right-margin;
+        .portfolio-title {
+            color: $secondary-font-color;
+            font-size: 4.8rem;
+            font-weight: 700;
+        }
+        .portfolio-comment {
+            color: $secondary-font-color;
+            font-size: 2.4rem;
+            margin-top: 2rem;
+            font-weight: 500;
+        }
+    }
+}
+.portfolio-container {
+    margin: 0 $left-right-margin;
+    @include flex(space-between, flex-start, row);
+    flex-wrap: wrap;
+    height: 100%;
+    .item-container-1,
+    .item-container-2,
+    .item-container-3,
+    .item-container-4,
+    .item-container-5 {
+        position: relative;
+        width: 22vw;
+        height: 13vw;
+        border-radius: 1rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        margin: 1% 0;
+        @include flex(center, center, column);
+        cursor: pointer;
+        transition: all 1.2s ease-in-out;
+        .item-name {
+            display: none;
+            color: $secondary-font-color;
+            font-size: 2rem;
+            font-weight: 700;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: $primary-font-color;
+        }
+        a {
+            display: none;
+            .button {
+                @include flex(center, center, row);
+                margin-top: 1rem;
+                background: $primary-color;
+                padding: 0.2rem 0.8rem;
+                border-radius: 2rem;
+                transition: all 0.3s ease-in-out;
+                .name {
+                    color: $primary-font-color;
+                    font-size: 1.4rem;
+                }
+                .arrow {
+                    @include flex(center, center, row);
+                    .button-arrow {
+                        height: 2.5rem;
+                    }
+                }
+            }
+            &:hover {
+                .button {
+                    background: $secondary-color;
+                }
+            }
+        }
+
+        .item-name-container {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            border-radius: 0 0 1rem 1rem;
+
+            .item-name-2 {
+                color: $primary-font-color;
+                padding: 0.9vw;
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+        }
+
+        &:hover {
+            .item-name-container {
+                display: none;
+            }
+
+            .item-name {
+                display: inline;
+            }
+
+            a {
+                display: inline;
+            }
+
+            filter: grayscale(100%);
+        }
+    }
+}
+.item-container-1 {
+    background: url(/img/weather-app.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.item-container-2 {
+    background: url(/img/work-scheduler.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.item-container-3 {
+    background: url(/img/quiz-app.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.item-container-4 {
+    background: url(/img/password-generator.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.item-container-5 {
+    background: url(/img/comic-base.png) center center no-repeat;
+    background-size: 100% 100%;
+}

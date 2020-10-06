@@ -6,6 +6,7 @@ const navMenuSvgEl = $(".nav-menu-svg");
 const logoEl = $("#logo");
 const allLinksEl = $("a");
 const rootEl = $("html, body");
+const logoSvgEl = $(".logo-svg");
 //Events
 burgerMenuEl.click(onClickBurgerMenu);
 allLinksEl.click(onLinkClick);
@@ -22,14 +23,12 @@ function onClickBurgerMenu() {
     }
 }
 function onLinkClick(event) {
-    console.log("click");
     if (this.hash !== "") {
         event.preventDefault();
         let hash = this.hash;
         rootEl.animate(
-            { scrollTop: $(hash).offset().top },
-            800,
-            () => (window.location.hash = hash)
+            { scrollTop: $(hash).offset().top - logoSvgEl.height() + "px" },
+            800
         );
     }
 }
