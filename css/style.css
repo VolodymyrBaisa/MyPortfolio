@@ -299,8 +299,8 @@ a {
   margin-top: 3.7vw;
   height: calc(100vh - 3.7vw);
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffffff), color-stop(99.03%, rgba(255, 255, 255, 0))), url("/img/background-1.png");
-  background-image: linear-gradient(90deg, #ffffff 50%, rgba(255, 255, 255, 0) 99.03%), url("/img/background-1.png");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffffff), color-stop(99.03%, rgba(255, 255, 255, 0))), url("../img/background-1.png");
+  background-image: linear-gradient(90deg, #ffffff 50%, rgba(255, 255, 255, 0) 99.03%), url("../img/background-1.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ a {
 }
 
 .hero-image {
-  background: url(/img/me.png) center center no-repeat;
+  background: url(../img/me.png) center center no-repeat;
   background-size: 100% 100%;
   height: 15vw;
   width: 15vw;
@@ -418,8 +418,8 @@ a {
 #about {
   position: relative;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 244, 244, 0.75)), to(rgba(244, 244, 244, 0))), url("/img/background-about.png");
-  background-image: linear-gradient(180deg, rgba(244, 244, 244, 0.75) 0%, rgba(244, 244, 244, 0) 100%), url("/img/background-about.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 244, 244, 0.75)), to(rgba(244, 244, 244, 0))), url("../img/background-about.png");
+  background-image: linear-gradient(180deg, rgba(244, 244, 244, 0.75) 0%, rgba(244, 244, 244, 0) 100%), url("../img/background-about.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -519,7 +519,7 @@ a {
 }
 
 #portfolio {
-  background: url(/img/background-2.png) center center no-repeat;
+  background: url(../img/background-2.png) center center no-repeat;
   background-size: cover;
 }
 
@@ -770,27 +770,27 @@ a {
 }
 
 .item-container-1 {
-  background: url(/img/weather-app.png) center center no-repeat;
+  background: url(../img/weather-app.png) center center no-repeat;
   background-size: 100% 100%;
 }
 
 .item-container-2 {
-  background: url(/img/work-scheduler.png) center center no-repeat;
+  background: url(../img/work-scheduler.png) center center no-repeat;
   background-size: 100% 100%;
 }
 
 .item-container-3 {
-  background: url(/img/quiz-app.png) center center no-repeat;
+  background: url(../img/quiz-app.png) center center no-repeat;
   background-size: 100% 100%;
 }
 
 .item-container-4 {
-  background: url(/img/password-generator.png) center center no-repeat;
+  background: url(../img/password-generator.png) center center no-repeat;
   background-size: 100% 100%;
 }
 
 .item-container-5 {
-  background: url(/img/comic-base.png) center center no-repeat;
+  background: url(../img/comic-base.png) center center no-repeat;
   background-size: 100% 100%;
 }
 
@@ -806,8 +806,8 @@ a {
   right: 0;
   -webkit-filter: blur(3px);
           filter: blur(3px);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.15))), url(/img/background-2.png) center center no-repeat;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), url(/img/background-2.png) center center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.15))), url(../img/background-2.png) center center no-repeat;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), url(../img/background-2.png) center center no-repeat;
   background-size: cover;
   z-index: -1;
 }
