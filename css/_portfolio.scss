@@ -64,8 +64,9 @@
                 @include flex(center, center, row);
                 margin-top: 1rem;
                 background: $primary-color;
-                padding: 0.2rem 0.8rem;
+                padding: 0.2rem 1rem;
                 border-radius: 2rem;
+                border: 1px solid $third-color;
                 transition: all 0.3s ease-in-out;
                 .name {
                     color: $primary-font-color;

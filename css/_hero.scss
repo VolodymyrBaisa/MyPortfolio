@@ -110,7 +110,6 @@
                 color: $primary-font-color;
                 margin-top: 1%;
                 text-decoration: none;
-                //cursor: pointer;
                 &::before {
                     content: "";
                     position: absolute;
@@ -141,7 +140,6 @@
 .hero-container {
     @include flex(center, center, column);
     margin-top: 3.7vw;
-    //height: calc(100% - 3.7vw);
     height: calc(100vh - 3.7vw);
     width: 100%;
     background-image: linear-gradient(
@@ -198,6 +196,7 @@
         border-radius: 4px;
         background: $primary-color;
         margin-left: 2vw;
+        font-weight: 500;
         transition: background 0.2s ease;
         &:hover {
             background: $secondary-color;
@@ -211,7 +210,6 @@
 
         .git,
         .email {
-            fill: $third-color;
             width: 1.5vw;
             margin-top: 0.4vw;
         }

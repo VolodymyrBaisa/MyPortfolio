@@ -375,6 +375,7 @@ a {
   border-radius: 4px;
   background: #1d2c3e;
   margin-left: 2vw;
+  font-weight: 500;
   -webkit-transition: background 0.2s ease;
   transition: background 0.2s ease;
 }
@@ -406,7 +407,6 @@ a {
 .social-icons-container .linkedin-container .email,
 .social-icons-container .email-container .git,
 .social-icons-container .email-container .email {
-  fill: #f4f4f4;
   width: 1.5vw;
   margin-top: 0.4vw;
 }
@@ -659,8 +659,9 @@ a {
           flex-direction: row;
   margin-top: 1rem;
   background: #1d2c3e;
-  padding: 0.2rem 0.8rem;
+  padding: 0.2rem 1rem;
   border-radius: 2rem;
+  border: 1px solid #f4f4f4;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -791,6 +792,334 @@ a {
 .item-container-5 {
   background: url(/img/comic-base.png) center center no-repeat;
   background-size: 100% 100%;
+}
+
+#contact {
+  position: relative;
+}
+
+#contact .background-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.15))), url(/img/background-2.png) center center no-repeat;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), url(/img/background-2.png) center center no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.contact-container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #3d4958;
+  text-align: center;
+  font-size: 4rem;
+  color: #f4f4f4;
+  font-weight: 500;
+  line-height: 6rem;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 0.5vw 3%;
+}
+
+.message {
+  margin: 4vw 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.message .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.message .row input {
+  height: 3vw;
+  width: 20vw;
+  margin-right: 2vw;
+  border: 2px solid #1d2c3e;
+  border-radius: 0.5rem;
+  padding: 0.1rem 1rem;
+  font-size: 2rem;
+  color: #1d2c3e;
+}
+
+.message .row input::-webkit-input-placeholder {
+  font-size: 2rem;
+}
+
+.message .row input:-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.message .row input::-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.message .row input::placeholder {
+  font-size: 2rem;
+}
+
+.message .row input:last-child {
+  margin-right: 0;
+}
+
+.message textarea {
+  height: 15vw;
+  width: 42vw;
+  border: 2px solid #1d2c3e;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #1d2c3e;
+  resize: vertical;
+  margin-top: 3rem;
+}
+
+.message textarea::-webkit-input-placeholder {
+  font-size: 2rem;
+  line-height: 3;
+}
+
+.message textarea:-ms-input-placeholder {
+  font-size: 2rem;
+  line-height: 3;
+}
+
+.message textarea::-ms-input-placeholder {
+  font-size: 2rem;
+  line-height: 3;
+}
+
+.message textarea::placeholder {
+  font-size: 2rem;
+  line-height: 3;
+}
+
+.message #submit.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #1d2c3e;
+  padding: 0.6rem 1rem;
+  border-radius: 1.5rem;
+  margin-top: 3rem;
+  border: 1px solid #f4f4f4;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.message #submit.button .name {
+  color: #f4f4f4;
+  font-size: 2rem;
+}
+
+.message #submit.button .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.message #submit.button .arrow .button-arrow {
+  height: 2.5rem;
+}
+
+.message #submit.button:hover {
+  background: #3d4958;
+}
+
+.footer-header {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.footer-header-svg {
+  height: 100%;
+  min-width: 100%;
+}
+
+.right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  right: 3%;
+  height: 100%;
+  width: 60vw;
+}
+
+.right-container .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.right-container .copyright span {
+  color: #f4f4f4;
+  margin: 0 1rem;
+}
+
+.right-container .copyright span:last-child {
+  font-weight: 700;
+}
+
+.right-container .copyright .copyright-svg {
+  height: 2vw;
+  width: 2vw;
+}
+
+.right-container .social-icons-container .facebook-container,
+.right-container .social-icons-container .git-container,
+.right-container .social-icons-container .linkedin-container,
+.right-container .social-icons-container .email-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 3vw;
+  width: 3vw;
+  border-radius: 4px;
+  background: #f4f4f4;
+  font-weight: 500;
+  margin-left: 2vw;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+.right-container .social-icons-container .facebook-container:hover,
+.right-container .social-icons-container .git-container:hover,
+.right-container .social-icons-container .linkedin-container:hover,
+.right-container .social-icons-container .email-container:hover {
+  background: #3d4958;
+}
+
+.right-container .social-icons-container .facebook-container .facebook,
+.right-container .social-icons-container .facebook-container .linkedin,
+.right-container .social-icons-container .git-container .facebook,
+.right-container .social-icons-container .git-container .linkedin,
+.right-container .social-icons-container .linkedin-container .facebook,
+.right-container .social-icons-container .linkedin-container .linkedin,
+.right-container .social-icons-container .email-container .facebook,
+.right-container .social-icons-container .email-container .linkedin {
+  color: #1d2c3e;
+  font-size: 2vw;
+}
+
+.right-container .social-icons-container .facebook-container .git,
+.right-container .social-icons-container .facebook-container .email,
+.right-container .social-icons-container .git-container .git,
+.right-container .social-icons-container .git-container .email,
+.right-container .social-icons-container .linkedin-container .git,
+.right-container .social-icons-container .linkedin-container .email,
+.right-container .social-icons-container .email-container .git,
+.right-container .social-icons-container .email-container .email {
+  width: 1.5vw;
+  margin-top: 0.4vw;
+}
+
+.right-container .social-icons-container .facebook-container:first-child {
+  margin-left: 0;
 }
 
 @media only screen and (min-width: 987px) {

@@ -1,0 +1,172 @@
+#contact {
+    position: relative;
+
+    .background-cover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        filter: blur(3px);
+
+        background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.15) 0%,
+                rgba(255, 255, 255, 0.15) 100%
+            ),
+            url(/img/background-2.png) center center no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.contact-container {
+    .title {
+        @include flex(center, center, column);
+        background: $secondary-color;
+        text-align: center;
+        font-size: 4rem;
+        color: $primary-font-color;
+        font-weight: 500;
+        line-height: 6rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        padding: 0.5vw $left-right-margin;
+    }
+}
+//Message
+.message {
+    margin: 4vw $left-right-margin;
+    @include flex(center, center, column);
+    .row {
+        @include flex(center, center, row);
+        input {
+            height: 3vw;
+            width: 20vw;
+            margin-right: 2vw;
+            border: 2px solid $primary-color;
+            border-radius: 0.5rem;
+            padding: 0.1rem 1rem;
+            font-size: 2rem;
+            color: $secondary-font-color;
+            &::placeholder {
+                font-size: 2rem;
+            }
+        }
+
+        input:last-child {
+            margin-right: 0;
+        }
+    }
+
+    textarea {
+        height: 15vw;
+        width: 42vw;
+        border: 2px solid $primary-color;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 2rem;
+        color: $secondary-font-color;
+        resize: vertical;
+        margin-top: 3rem;
+        &::placeholder {
+            font-size: 2rem;
+            line-height: 3;
+        }
+    }
+
+    #submit.button {
+        @include flex(center, center, row);
+        background: $primary-color;
+        padding: 0.6rem 1rem;
+        border-radius: 1.5rem;
+        margin-top: 3rem;
+        border: 1px solid $third-color;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        .name {
+            color: $primary-font-color;
+            font-size: 2rem;
+        }
+        .arrow {
+            @include flex(center, center, row);
+            .button-arrow {
+                height: 2.5rem;
+            }
+        }
+
+        &:hover {
+            background: $secondary-color;
+        }
+    }
+}
+
+//Footer
+// Navigation Header
+.footer-header {
+    position: absolute;
+    bottom: 0;
+    @include flex(center, center, row);
+    width: 100%;
+}
+
+.footer-header-svg {
+    height: 100%;
+    min-width: 100%;
+}
+
+.right-container {
+    @include flex(space-between, center, row);
+    position: absolute;
+    right: $left-right-margin;
+    height: 100%;
+    width: 60vw;
+    .copyright {
+        @include flex(center, center, row);
+        span {
+            color: $primary-font-color;
+            margin: 0 1rem;
+        }
+
+        span:last-child {
+            font-weight: 700;
+        }
+        .copyright-svg {
+            height: 2vw;
+            width: 2vw;
+        }
+    }
+    .social-icons-container {
+        .facebook-container,
+        .git-container,
+        .linkedin-container,
+        .email-container {
+            @include flex(center, center, row);
+            height: 3vw;
+            width: 3vw;
+            border-radius: 4px;
+            background: $third-color;
+            font-weight: 500;
+            margin-left: 2vw;
+            transition: background 0.2s ease;
+            &:hover {
+                background: $secondary-color;
+            }
+
+            .facebook,
+            .linkedin {
+                color: $secondary-font-color;
+                font-size: 2vw;
+            }
+
+            .git,
+            .email {
+                width: 1.5vw;
+                margin-top: 0.4vw;
+            }
+        }
+
+        .facebook-container:first-child {
+            margin-left: 0;
+        }
+    }
+}
