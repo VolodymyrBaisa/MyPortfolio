@@ -592,7 +592,10 @@ a {
 .portfolio-container .item-container-2,
 .portfolio-container .item-container-3,
 .portfolio-container .item-container-4,
-.portfolio-container .item-container-5 {
+.portfolio-container .item-container-5,
+.portfolio-container .item-container-6,
+.portfolio-container .item-container-7,
+.portfolio-container .item-container-8 {
   position: relative;
   width: 22vw;
   height: 13vw;
@@ -622,7 +625,10 @@ a {
 .portfolio-container .item-container-2 .item-name,
 .portfolio-container .item-container-3 .item-name,
 .portfolio-container .item-container-4 .item-name,
-.portfolio-container .item-container-5 .item-name {
+.portfolio-container .item-container-5 .item-name,
+.portfolio-container .item-container-6 .item-name,
+.portfolio-container .item-container-7 .item-name,
+.portfolio-container .item-container-8 .item-name {
   display: none;
   color: #1d2c3e;
   font-size: 2rem;
@@ -635,7 +641,10 @@ a {
 .portfolio-container .item-container-2 a,
 .portfolio-container .item-container-3 a,
 .portfolio-container .item-container-4 a,
-.portfolio-container .item-container-5 a {
+.portfolio-container .item-container-5 a,
+.portfolio-container .item-container-6 a,
+.portfolio-container .item-container-7 a,
+.portfolio-container .item-container-8 a {
   display: none;
 }
 
@@ -643,7 +652,10 @@ a {
 .portfolio-container .item-container-2 a .button,
 .portfolio-container .item-container-3 a .button,
 .portfolio-container .item-container-4 a .button,
-.portfolio-container .item-container-5 a .button {
+.portfolio-container .item-container-5 a .button,
+.portfolio-container .item-container-6 a .button,
+.portfolio-container .item-container-7 a .button,
+.portfolio-container .item-container-8 a .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,7 +682,10 @@ a {
 .portfolio-container .item-container-2 a .button .name,
 .portfolio-container .item-container-3 a .button .name,
 .portfolio-container .item-container-4 a .button .name,
-.portfolio-container .item-container-5 a .button .name {
+.portfolio-container .item-container-5 a .button .name,
+.portfolio-container .item-container-6 a .button .name,
+.portfolio-container .item-container-7 a .button .name,
+.portfolio-container .item-container-8 a .button .name {
   color: #f4f4f4;
   font-size: 1.4rem;
 }
@@ -679,7 +694,10 @@ a {
 .portfolio-container .item-container-2 a .button .arrow,
 .portfolio-container .item-container-3 a .button .arrow,
 .portfolio-container .item-container-4 a .button .arrow,
-.portfolio-container .item-container-5 a .button .arrow {
+.portfolio-container .item-container-5 a .button .arrow,
+.portfolio-container .item-container-6 a .button .arrow,
+.portfolio-container .item-container-7 a .button .arrow,
+.portfolio-container .item-container-8 a .button .arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,7 +717,10 @@ a {
 .portfolio-container .item-container-2 a .button .arrow .button-arrow,
 .portfolio-container .item-container-3 a .button .arrow .button-arrow,
 .portfolio-container .item-container-4 a .button .arrow .button-arrow,
-.portfolio-container .item-container-5 a .button .arrow .button-arrow {
+.portfolio-container .item-container-5 a .button .arrow .button-arrow,
+.portfolio-container .item-container-6 a .button .arrow .button-arrow,
+.portfolio-container .item-container-7 a .button .arrow .button-arrow,
+.portfolio-container .item-container-8 a .button .arrow .button-arrow {
   height: 2.5rem;
 }
 
@@ -707,7 +728,10 @@ a {
 .portfolio-container .item-container-2 a:hover .button,
 .portfolio-container .item-container-3 a:hover .button,
 .portfolio-container .item-container-4 a:hover .button,
-.portfolio-container .item-container-5 a:hover .button {
+.portfolio-container .item-container-5 a:hover .button,
+.portfolio-container .item-container-6 a:hover .button,
+.portfolio-container .item-container-7 a:hover .button,
+.portfolio-container .item-container-8 a:hover .button {
   background: #3d4958;
 }
 
@@ -715,7 +739,10 @@ a {
 .portfolio-container .item-container-2 .item-name-container,
 .portfolio-container .item-container-3 .item-name-container,
 .portfolio-container .item-container-4 .item-name-container,
-.portfolio-container .item-container-5 .item-name-container {
+.portfolio-container .item-container-5 .item-name-container,
+.portfolio-container .item-container-6 .item-name-container,
+.portfolio-container .item-container-7 .item-name-container,
+.portfolio-container .item-container-8 .item-name-container {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -729,7 +756,10 @@ a {
 .portfolio-container .item-container-2 .item-name-container .item-name-2,
 .portfolio-container .item-container-3 .item-name-container .item-name-2,
 .portfolio-container .item-container-4 .item-name-container .item-name-2,
-.portfolio-container .item-container-5 .item-name-container .item-name-2 {
+.portfolio-container .item-container-5 .item-name-container .item-name-2,
+.portfolio-container .item-container-6 .item-name-container .item-name-2,
+.portfolio-container .item-container-7 .item-name-container .item-name-2,
+.portfolio-container .item-container-8 .item-name-container .item-name-2 {
   color: #f4f4f4;
   padding: 0.9vw;
   font-size: 1.6rem;
@@ -740,7 +770,10 @@ a {
 .portfolio-container .item-container-2:hover,
 .portfolio-container .item-container-3:hover,
 .portfolio-container .item-container-4:hover,
-.portfolio-container .item-container-5:hover {
+.portfolio-container .item-container-5:hover,
+.portfolio-container .item-container-6:hover,
+.portfolio-container .item-container-7:hover,
+.portfolio-container .item-container-8:hover {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
@@ -749,7 +782,10 @@ a {
 .portfolio-container .item-container-2:hover .item-name-container,
 .portfolio-container .item-container-3:hover .item-name-container,
 .portfolio-container .item-container-4:hover .item-name-container,
-.portfolio-container .item-container-5:hover .item-name-container {
+.portfolio-container .item-container-5:hover .item-name-container,
+.portfolio-container .item-container-6:hover .item-name-container,
+.portfolio-container .item-container-7:hover .item-name-container,
+.portfolio-container .item-container-8:hover .item-name-container {
   display: none;
 }
 
@@ -757,7 +793,10 @@ a {
 .portfolio-container .item-container-2:hover .item-name,
 .portfolio-container .item-container-3:hover .item-name,
 .portfolio-container .item-container-4:hover .item-name,
-.portfolio-container .item-container-5:hover .item-name {
+.portfolio-container .item-container-5:hover .item-name,
+.portfolio-container .item-container-6:hover .item-name,
+.portfolio-container .item-container-7:hover .item-name,
+.portfolio-container .item-container-8:hover .item-name {
   display: inline;
 }
 
@@ -765,7 +804,10 @@ a {
 .portfolio-container .item-container-2:hover a,
 .portfolio-container .item-container-3:hover a,
 .portfolio-container .item-container-4:hover a,
-.portfolio-container .item-container-5:hover a {
+.portfolio-container .item-container-5:hover a,
+.portfolio-container .item-container-6:hover a,
+.portfolio-container .item-container-7:hover a,
+.portfolio-container .item-container-8:hover a {
   display: inline;
 }
 
@@ -791,6 +833,21 @@ a {
 
 .item-container-5 {
   background: url(../img/comic-base.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.item-container-6 {
+  background: url(../img/project2.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.item-container-7 {
+  background: url(../img/note_taker.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.item-container-8 {
+  background: url(../img/eat_de_burger.png) center center no-repeat;
   background-size: 100% 100%;
 }
 
@@ -1207,6 +1264,20 @@ a {
     margin: 3% 0;
     width: calc(22vw * 3);
     height: calc(13vw * 3);
+  }
+  .message {
+    margin: 4vw 3%;
+  }
+  .message .row input {
+    height: 6vw;
+    width: 40vw;
+  }
+  .message .row input:last-child {
+    margin-right: 0;
+  }
+  .message textarea {
+    height: 15vw;
+    width: 82vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

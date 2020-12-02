@@ -40,7 +40,10 @@
     .item-container-2,
     .item-container-3,
     .item-container-4,
-    .item-container-5 {
+    .item-container-5,
+    .item-container-6,
+    .item-container-7,
+    .item-container-8 {
         position: relative;
         width: 22vw;
         height: 13vw;
@@ -138,5 +141,17 @@
 }
 .item-container-5 {
     background: url(../img/comic-base.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.item-container-6 {
+    background: url(../img/project2.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.item-container-7 {
+    background: url(../img/note_taker.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.item-container-8 {
+    background: url(../img/eat_de_burger.png) center center no-repeat;
     background-size: 100% 100%;
 }

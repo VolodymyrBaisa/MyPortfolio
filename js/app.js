@@ -7,9 +7,14 @@ const logoEl = $("#logo");
 const allLinksEl = $("a");
 const rootEl = $("html, body");
 const logoSvgEl = $(".logo-svg");
+const sendEmailEl = $("#submit");
+const nameEl = $("#name");
+const emailEl = $("#email");
+const messageEl = $("#message");
 //Events
 burgerMenuEl.click(onClickBurgerMenu);
 allLinksEl.click(onLinkClick);
+sendEmailEl.click(onSubmitClick);
 //Functions
 function onClickBurgerMenu() {
     const width = navMenuSvgEl.css("width").replace("px", "");
@@ -31,4 +36,10 @@ function onLinkClick(event) {
             800
         );
     }
+}
+
+function onSubmitClick() {
+    window.open(
+        `mailto:biosvova@gmail.com?body=name:${nameEl.val()}%0D%0Aemail:${emailEl.val()}%0D%0A${messageEl.val()}`
+    );
 }

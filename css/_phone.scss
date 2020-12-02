@@ -15,4 +15,24 @@
             height: calc(13vw * 3);
         }
     }
+
+    //Message
+    .message {
+        margin: 4vw $left-right-margin;
+        .row {
+            input {
+                height: 6vw;
+                width: 40vw;
+            }
+
+            input:last-child {
+                margin-right: 0;
+            }
+        }
+
+        textarea {
+            height: 15vw;
+            width: 82vw;
+        }
+    }
 }
