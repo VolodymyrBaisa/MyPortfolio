@@ -1,6 +1,6 @@
 ## Portfolio page of the Volodymyr Baisa
 
-In this assignment, you'll build a professional portfolio site using HTML/CSS. These instructions include a short style guide; follow it to design an aesthetically pleasing layout while creating different kinds of complex HTML elements.
+This is a portfolio website using only HTML5, SASS, JavaScript and jQuery. Media queries were used to make this site mobile responsive.
 
 ### Folder Structure
 
