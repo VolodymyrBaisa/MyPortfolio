@@ -1,8 +1,8 @@
-### Portfolio page of the Volodymyr Baisa
+## Portfolio page of the Volodymyr Baisa
 
 In this assignment, you'll build a professional portfolio site using HTML/CSS. These instructions include a short style guide; follow it to design an aesthetically pleasing layout while creating different kinds of complex HTML elements.
 
-## Folder Structure
+### Folder Structure
 
 ```
 C:.
@@ -38,7 +38,7 @@ C:.
 │       me.png
 │       note_taker.png
 │       password-generator.png
-│       project2.png
+│       project2.pnsg
 │       quiz-app.png
 │       weather-app.png
 │       work-scheduler.png
